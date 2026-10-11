@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@username | bio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Background effects -->
+    <div class="bg-blur"></div>
+    <div class="bg-glow"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Main card -->
+    <main class="card">
+        <!-- Avatar -->
+        <div class="avatar-wrapper">
+            <div class="avatar-glow"></div>
+            <img src="https://i.pravatar.cc/300?img=12" alt="avatar" class="avatar">
+            <div class="verified-badge"><i class="fas fa-check"></i></div>
+        </div>
+
+        <!-- Username & Badges -->
+        <div class="username-row">
+            <h1 class="username">username</h1>
+            <span class="crown"><i class="fas fa-crown"></i></span>
+        </div>
+
+        <!-- Bio -->
+        <p class="bio">✨ Developer • Designer • Dreamer ✨</p>
+
+        <!-- View counter -->
+        <div class="stats">
+            <div class="stat">
+                <i class="fas fa-eye"></i>
+                <span id="views">1,234</span>
+            </div>
+            <div class="stat">
+                <i class="fas fa-heart"></i>
+                <span id="likes">567</span>
+            </div>
+        </div>
+
+        <!-- Social links -->
+        <div class="socials">
+            <a href="#" class="social discord" title="Discord">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="#" class="social instagram" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social github" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" class="social youtube" title="YouTube">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="social spotify" title="Spotify">
+                <i class="fab fa-spotify"></i>
+            </a>
+            <a href="#" class="social tiktok" title="TikTok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+
+        <!-- Action buttons -->
+        <div class="actions">
+            <button class="btn btn-primary" id="copyBtn">
+                <i class="fas fa-share-alt"></i> Share
+            </button>
+            <button class="btn btn-secondary" id="likeBtn">
+                <i class="fas fa-heart"></i> Like
+            </button>
+        </div>
+
+        <!-- Audio player (optional) -->
+        <div class="audio-player">
+            <button class="play-btn" id="playBtn">
+                <i class="fas fa-play" id="playIcon"></i>
+            </button>
+            <div class="audio-info">
+                <span class="song-title">Lofi Chill Beat</span>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+            <audio id="audio" loop>
+                <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <span>© 2025 <b>guns.lol</b></span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
